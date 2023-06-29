@@ -13,7 +13,7 @@ Para que o software funcione utilizando o PyCharm, é necessário instalar as de
    - 3.3. No bloco "Variáveis do sistema" clique duas vezes no nome "Path"
    - 3.4. Na janela que abriu clique em "Novo" e cole o seguinte caminho: C:\Program Files (x86)\poppler-0.68.0\bin
    - 3.5. Clique em OK em todas as janelas abertas.
-## Executando o projeto do Windows
+## Executando o projeto no Windows
 Para conseguir gerar um arquivo executável **RenomearPDF.exe** para uma máquina sem o python e sem as dependências instaladas, você precisa usar o **pyinstaller** no PyCharm e ter instalado pelo menos o **tesseract-ocr** e o **poppler**.
 Siga os seguintes passos:
 1. No terminal do PyCharm, instale o pyinstaller através do:
