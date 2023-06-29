@@ -26,7 +26,7 @@ pyinstaller --onefile RenomearPDF.py
 ```
 O Pyinstaller irá criar um diretório chamado **dist** onde estará disponível o arquivo executável.
 
-2. Após isso, crie uma pasta com o nome **pdfs**.
+2. Após isso, crie uma pasta com o nome **pdfs** dentro da pasta **dist**.
 3. Siga os **passos 1 e 3 da seção anterior** para instalar as dependências na máquina que vai executar o arquivo.
 4. Insira os pdfs que precisa renomear na pasta **pdfs**.
-5. Execute o arquivo RenomearPDF.exe
+5. Execute o arquivo RenomearPDF.exe.
