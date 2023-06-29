@@ -1,5 +1,5 @@
 # RenomearPDF_IBGE
-O projeto tem como objetivo renomear uma lista de mapas em PDF que foram escaneados. O software abre cada PDF, identifica o número do setor ao qual ele pertence e renomeia o respectivo arquivo.
+O projeto tem como objetivo renomear uma lista de mapas em PDF que foram escaneados. O software abre cada PDF inserido na pasta **pdfs**, converte em imagem apenas a segunda página, identifica o número do setor ao qual ele pertence e renomeia o respectivo arquivo.
 ## Executando o projeto com o PyCharm
 Para que o software funcione utilizando o PyCharm, é necessário instalar as dependências do projeto como o **Tesseract-ocr** e o **Poppler**. Siga o passo a passo:
 1. Instale o tesseract-ocr (_https://sourceforge.net/projects/tesseract-ocr.mirror/_)
