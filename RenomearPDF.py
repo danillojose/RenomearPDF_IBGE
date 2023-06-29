@@ -4,8 +4,7 @@ import pytesseract
 from PIL import Image
 from pdf2image import convert_from_path
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\danil\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Users\-PESSOAL-\AppData\Local\Programs\Tesseract-OCR\tesseract.exe' #para Ramon
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\user-name\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 path = "pdfs"  # pasta com os pdfs
 filename = "page_2.jpg"
 n_file = 0
