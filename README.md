@@ -17,13 +17,13 @@ Para que o software funcione utilizando o PyCharm, é necessário instalar as de
 Para conseguir executar o arquivo **RenomearPDF.exe** em uma máquina sem o python e sem as dependências instaladas, você precisa usar o **pyinstaller** no PyCharm e ter instalado pelo menos o **tesseract-ocr** e o **poppler**.
 Para tudo funcionar, siga os seguintes passos:
 1. No terminal do PyCharm, instale o pyinstaller através do:
-'''
+```
 pip install pyinstaller
-'''
+```
 e una todos as dependências em um só arquivo com:
-'''
+```
 pyinstaller --onefile RenomearPDF.py
-'''
+```
 O Pyinstaller irá criar um diretório chamado **dist** onde estará disponível o arquivo executável.
 2. Após isso, crie uma pasta com o nome **pdfs**.
 3. Siga os **passos 1 e 3 da seção anterior** para instalar as dependências na máquina que vai executar o arquivo.
