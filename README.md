@@ -14,8 +14,18 @@ Para que o software funcione utilizando o PyCharm, é necessário instalar as de
    - 3.4. Na janela que abriu clique em "Novo" e cole o seguinte caminho: C:\Program Files (x86)\poppler-0.68.0\bin
    - 3.5. Clique em OK em todas as janelas abertas.
 ## Executando o projeto do Windows
-Para conseguir executar o arquivo **RenomearPDF.exe** em uma máquina sem o python e sem as dependências instaladas, você precisa ter instalado pelo menos o **tesseract-ocr** e o **poppler**.
+Para conseguir executar o arquivo **RenomearPDF.exe** em uma máquina sem o python e sem as dependências instaladas, você precisa usar o **pyinstaller** no PyCharm e ter instalado pelo menos o **tesseract-ocr** e o **poppler**.
 Para tudo funcionar, siga os seguintes passos:
-1. Siga os passos 1 e 3 da seção anterior.
-2. Insira os pdfs que precisa renomear na pasta **pdfs**.
-3. Execute o arquivo RenomearPDF.exe
+1. No terminal do PyCharm, instale o pyinstaller através do:
+'''
+pip install pyinstaller
+'''
+e una todos as dependências em um só arquivo com:
+'''
+pyinstaller --onefile RenomearPDF.py
+'''
+O Pyinstaller irá criar um diretório chamado **dist** onde estará disponível o arquivo executável.
+2. Após isso, crie uma pasta com o nome **pdfs**.
+3. Siga os **passos 1 e 3 da seção anterior** para instalar as dependências na máquina que vai executar o arquivo.
+4. Insira os pdfs que precisa renomear na pasta **pdfs**.
+5. Execute o arquivo RenomearPDF.exe
